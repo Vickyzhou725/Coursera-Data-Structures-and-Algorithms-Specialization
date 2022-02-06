@@ -1,12 +1,11 @@
 #!/usr/bin/python3
 
 
-import sys
 import queue
-
+import sys
 
 # Maximum allowed edge length
-maxlen = 2 * 10**6
+maxlen = 2 * 10 ** 6
 
 
 class DistPreprocessSmall:
@@ -82,19 +81,19 @@ class DistPreprocessSmall:
 
 
 def readl():
-        return map(int, sys.stdin.readline().split())
+    return map(int, sys.stdin.readline().split())
 
 
 if __name__ == '__main__':
-    n,m = readl()
+    n, m = readl()
     adj = [[[] for _ in range(n)], [[] for _ in range(n)]]
     cost = [[[] for _ in range(n)], [[] for _ in range(n)]]
     for e in range(m):
-        u,v,c = readl()
-        adj[0][u-1].append(v-1)
-        cost[0][u-1].append(c)
-        adj[1][v-1].append(u-1)
-        cost[1][v-1].append(c)
+        u, v, c = readl()
+        adj[0][u - 1].append(v - 1)
+        cost[0][u - 1].append(c)
+        adj[1][v - 1].append(u - 1)
+        cost[1][v - 1].append(c)
 
     ch = DistPreprocessSmall(n, adj, cost)
     print("Ready")
@@ -102,4 +101,4 @@ if __name__ == '__main__':
     t, = readl()
     for i in range(t):
         s, t = readl()
-        print(ch.query(s-1, t-1))
+        print(ch.query(s - 1, t - 1))

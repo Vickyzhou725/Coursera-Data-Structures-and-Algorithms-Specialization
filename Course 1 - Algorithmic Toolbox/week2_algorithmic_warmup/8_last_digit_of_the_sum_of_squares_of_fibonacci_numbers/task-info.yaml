@@ -41,7 +41,7 @@ files:
         input_n = int(input())
         print(last_digit_of_the_sum_of_squares_of_fibonacci_numbers(input_n))
   learner_created: false
-- name: last_digit_of_the_sum_of_squares_of_fibonacci_numbers_unit_tests.py
+- name: last_digit_of_the_sum_of_sq_of_fibonacci_num_unit_tests.py
   visible: true
   placeholders:
   - offset: 593

@@ -1,10 +1,10 @@
-#Uses python3
+# Uses python3
 import sys
-import math
+
 
 def minimum_distance(x, y):
     result = 0.
-    #write your code here
+    # write your code here
     return result
 
 

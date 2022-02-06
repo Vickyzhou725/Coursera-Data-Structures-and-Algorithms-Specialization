@@ -1,11 +1,10 @@
-#Uses python3
+# Uses python3
 
 import sys
-import queue
 
 
 def shortet_paths(adj, cost, s, distance, reachable, shortest):
-    #write your code here
+    # write your code here
     pass
 
 
@@ -23,7 +22,7 @@ if __name__ == '__main__':
         cost[a - 1].append(w)
     s = data[0]
     s -= 1
-    distance = [10**19] * n
+    distance = [10 ** 19] * n
     reachable = [0] * n
     shortest = [1] * n
     shortet_paths(adj, cost, s, distance, reachable, shortest)
@@ -34,4 +33,3 @@ if __name__ == '__main__':
             print('-')
         else:
             print(distance[x])
-

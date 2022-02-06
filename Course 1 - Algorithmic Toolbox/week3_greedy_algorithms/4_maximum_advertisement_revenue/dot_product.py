@@ -1,6 +1,7 @@
-#Uses python3
+# Uses python3
 
 import sys
+
 
 def max_dot_product(a, b):
     res = 0
@@ -12,6 +13,7 @@ def max_dot_product(a, b):
         del b[max_b]
     return res
 
+
 def get_max_index(array):
     max = array[0]
     index = 0
@@ -21,6 +23,7 @@ def get_max_index(array):
             index = i
     return index
 
+
 if __name__ == '__main__':
     input = sys.stdin.read()
     data = list(map(int, input.split()))
@@ -28,4 +31,3 @@ if __name__ == '__main__':
     a = data[1:(n + 1)]
     b = data[(n + 1):]
     print(max_dot_product(a, b))
-    

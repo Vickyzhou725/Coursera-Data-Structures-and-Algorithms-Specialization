@@ -1,5 +1,6 @@
-#python3
+# python3
 import sys
+
 
 class StackWithMax():
     def __init__(self):
@@ -9,11 +10,11 @@ class StackWithMax():
         self.__stack.append(a)
 
     def Pop(self):
-        assert(len(self.__stack))
+        assert (len(self.__stack))
         self.__stack.pop()
 
     def Max(self):
-        assert(len(self.__stack))
+        assert (len(self.__stack))
         return max(self.__stack)
 
 
@@ -31,4 +32,4 @@ if __name__ == '__main__':
         elif query[0] == "max":
             print(stack.Max())
         else:
-            assert(0)
+            assert (0)

@@ -1,9 +1,9 @@
-#Uses python3
+# Uses python3
 import sys
-import math
+
 
 def clustering(x, y, k):
-    #write your code here
+    # write your code here
     return -1.
 
 

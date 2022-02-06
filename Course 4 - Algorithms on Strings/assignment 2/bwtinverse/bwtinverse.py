@@ -1,6 +1,7 @@
 # python3
 import sys
 
+
 def InverseBWT(bwt):
     # write your code here
     return ""

@@ -1,11 +1,10 @@
-#Uses python3
+# Uses python3
 
 import sys
-import queue
 
 
 def distance(adj, cost, s, t):
-    #write your code here
+    # write your code here
     return -1
 
 

@@ -1,10 +1,10 @@
-#Uses python3
+# Uses python3
 
 import sys
 
 
 def negative_cycle(adj, cost):
-    #write your code here
+    # write your code here
     return 0
 
 

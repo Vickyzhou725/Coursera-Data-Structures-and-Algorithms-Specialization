@@ -102,7 +102,7 @@ files:
         if all_tests_passed:
             passed()
   learner_created: false
-- name: binary_search.py
+- name: search.py
   visible: true
   placeholders:
   - offset: 309

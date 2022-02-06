@@ -1,10 +1,11 @@
-#Uses python3
+# Uses python3
 
 import sys
 
 
 def acyclic(adj):
     return 0
+
 
 if __name__ == '__main__':
     input = sys.stdin.read()

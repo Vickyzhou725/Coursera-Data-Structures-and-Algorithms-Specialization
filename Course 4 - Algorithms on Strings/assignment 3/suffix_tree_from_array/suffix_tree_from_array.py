@@ -56,12 +56,12 @@ if __name__ == '__main__':
     stack = [(0, 0)]
     result_edges = []
     while len(stack) > 0:
-      (node, edge_index) = stack[-1]
-      stack.pop()
-      if not node in tree:
-        continue
-      edges = tree[node]
-      if edge_index + 1 < len(edges):
-        stack.append((node, edge_index + 1))
-      print("%d %d" % (edges[edge_index][1], edges[edge_index][2]))
-      stack.append((edges[edge_index][0], 0))
+        (node, edge_index) = stack[-1]
+        stack.pop()
+        if not node in tree:
+            continue
+        edges = tree[node]
+        if edge_index + 1 < len(edges):
+            stack.append((node, edge_index + 1))
+        print("%d %d" % (edges[edge_index][1], edges[edge_index][2]))
+        stack.append((edges[edge_index][0], 0))

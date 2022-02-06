@@ -1,8 +1,9 @@
 # Uses python3
 import sys
 
-#The key points here are selecting max index from value/weight.
-#Add that value to result and clean that value in original list.
+
+# The key points here are selecting max index from value/weight.
+# Add that value to result and clean that value in original list.
 
 def get_optimal_value(capacity, weights, values):
     value = 0.
@@ -12,18 +13,19 @@ def get_optimal_value(capacity, weights, values):
         max_index = select_max_index(values, weights)
         if max_index >= 0:
             available_weights = min(capacity, weights[max_index])
-            value = value + available_weights * values[max_index]/weights[max_index]
+            value = value + available_weights * values[max_index] / weights[max_index]
             weights[max_index] = weights[max_index] - available_weights
             capacity = capacity - available_weights
 
     return value
+
 
 def select_max_index(values, weights):
     index = -1
     max = 0
     for i in range(n):
         if weights[i] > 0 and (values[i] / weights[i]) > max:
-            max = values[i]/weights[i]
+            max = values[i] / weights[i]
             index = i
     return index
 

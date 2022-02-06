@@ -1,5 +1,5 @@
 from test_helper import run_common_tests, failed, passed, check_tests_pass
-from binary_search import binary_search
+from search import binary_search
 from random import randrange
 
 
